@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: oxygen, Arial;
+}
+
+header {
+  background-color: rgba(0, 0, 0 , 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-home {
+  margin-left: 5%;
+  font-size: 24px ;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.name-home:hover {
+  color: rgb(90, 150, 200);
+  transition: 0.4s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 5% 40px 0;
+}
+
+nav a {
+  list-style-type: none;
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px 0 20px;
+
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.contacts {
+  color:rgb(255, 255, 255);
+  border: 1px solid rgb(90, 150, 200);
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  line-height: 33px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 rgb(90, 150, 200);
+  transition: transform .2s;
+}
+
+.contacts:hover {
+  transform: scale(1.2);
+  color: white;
+  box-shadow: inset 0 -100px 0 0 rgb(90, 150, 200);
+  
+}
+body {
+  background-color: rgb(35 , 35, 35);
+}
+ .newsletter {
+  background-color: rgb(70, 70, 70);
+  border-radius: 20px;
+  color: white;
+  margin: 50px 50px 50px 50px;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  grid-template-columns: repeat(6, 1fr) ;
+  grid-template-areas: "a a a b b b"
+                       "c c c c c c"
+                       "d d d d d d"
+                       "e e e e e e";
+}
+
+.first-name {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+}
+
+.last-name {
+  grid-area: b;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+}
+
+.email {
+  grid-area: c;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+}
+
+.message {
+  grid-area: d;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+}
+
+.message [type='text'] {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 10px;
+  
+}
+
+div .newsletter p , input , textarea {
+  margin: 5px;
+  
+}
+
+div .newsletter p {
+  margin-top: 10px;
+}
+
+div .newsletter input {
+ width: 100%;
+ height: 46px;
+ border-radius: 15px;
+ font-size: 18px;
+ padding: 5px 10px 5px 10px;
+ border: none;
+}
+
+.submit {
+  grid-area: e;
+  align-self: center;
+  justify-self: center;
+  width: 150px;
+  margin-top: 15px;
+}
+
+div.submit input{
+  width: 150px;
+  color:rgb(255, 255, 255);
+  border: 1px solid rgb(90, 150, 200);
+  background: rgb(45, 45, 45);
+  box-shadow: inset 0 0 0 0 rgb(90, 150, 200);
+  transition: transform , box-shadow .4s;
+  
+ }
+
+ .submit input:hover {
+  transform: scale(1);
+  color: white;
+  box-shadow: inset 0 -100px 0 0 rgb(90, 150, 200);
+  cursor: pointer;
+ }
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-link a {
+  list-style-type: none;
+  color: rgb(165, 165, 165);
+  text-decoration:underline;
+  font-weight: bold;
+  margin: 0 20px 0 20px;
+
+}
+.footer-link a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+  cursor: pointer;
+}

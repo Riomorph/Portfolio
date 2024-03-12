@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: oxygen, Arial;
+}
+
+header {
+  background-color: rgba(0, 0, 0 , 0.3);
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-home {
+  margin-left: 5%;
+  font-size: 24px ;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.name-home:hover {
+  color: rgb(90, 150, 200);
+  transition: 0.4s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 5% 40px 0;
+}
+
+nav a {
+  list-style-type: none;
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px 0 20px;
+
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.contacts {
+  color:rgb(255, 255, 255);
+  border: 1px solid rgb(90, 150, 200);
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  line-height: 33px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 rgb(90, 150, 200);
+  transition: transform .2s;
+}
+
+.contacts:hover {
+  transform: scale(1.2);
+  color: white;
+  box-shadow: inset 0 -100px 0 0 rgb(90, 150, 200);
+  
+}
+body {
+  background-color: rgb(35 , 35, 35);
+}
+
+
+  .front-page {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+  }
+
+
+.presentation {
+  font-size: 28px;
+  
+  flex-direction: column;
+  text-align: center;
+  cursor: default;
+  color: rgb(165, 165, 165);
+  padding-left: 10%;
+  width: 700px;
+  
+  transition: transform .4s;
+  
+}
+
+.presentation:hover {
+  transform: scale(1.1);
+  
+}
+
+.name {
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+
+.name:hover {
+  color: rgb(90, 150, 200);
+  transition: 0.4s;
+}
+
+span {
+  font-size: 36px;
+}
+
+.topo {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  
+}
+
+.topo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+ 
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 25px;
+}
+
+nav .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-link a {
+  list-style-type: none;
+  color: rgb(165, 165, 165);
+  text-decoration:underline;
+  font-weight: bold;
+  margin: 0 20px 0 20px;
+
+}
+.footer-link a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
